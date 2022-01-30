@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfApp_Lab_15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Lab_15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="619">
+    <Grid>
+        <Grid.RowDefinitions>   
+        <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="doc">
+            <FlowDocument>
+                <Paragraph TextAlignment="Center" FontSize="20">
+                    <Bold>
+                        <Hyperlink NavigateUri="https://www.purina.ru/cats/cat-breeds/library/maine_coon">МЕЙН-КУН</Hyperlink>
+                    </Bold>
+                    <Floater Width="250">
+                        <BlockUIContainer>
+                            <Image Source="data/2.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph>
+                    Мейн-кун – самая крупная порода домашних кошек, которую можно завести в семье с маленькими детьми и другими животными. 
+                    Ведь несмотря на хищную внешность, представители породы уравновешены и абсолютно неагрессивны. 
+                    А еще кошек мейн-кунов относят к классу питомцев-компаньонов. Причем с характером собаки. 
+                    Поэтому не удивляйтесь, если животное захочет поиграть в апорт или проявит интерес к купанию в ванне или 
+                    прогулкам на шлейке. Как и все компаньоны, куны не отходят от хозяев ни на шаг. Но по-настоящему верны только тому, 
+                    кого выберут в качестве вожака. Обычно это человек, который проводит с кошкой больше времени и следит за ее питанием. 
+                    В некоторых случаях им может стать даже ребенок.
+
+                </Paragraph>
+                <Paragraph FontSize="22" TextAlignment="Center" Background="Azure">
+                    <Run Foreground="Red">Ключевые качества</Run>
+                </Paragraph>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Уравновешенный характер.</Bold>
+                            Мейн-кун не вьется в ногах, чтобы привлечь внимание, и почти не подает голос. 
+                            Тип темперамента – сангвиник. Животное этой породы легко подстраивается под 
+                            настроение хозяина и не запоминает обиды. При выборе кошки, которая захочет сидеть 
+                            на коленях, обращайте внимание на поведение родительской пары. Мейн-куны могут 
+                            быть независимыми и идти в руки с неохотой или, наоборот, ласковыми и общительными.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Высокий интеллект.</Bold>
+                            Кошки породы мейн-кун регулярно попадают в рейтинги самых умных представителей семейства 
+                            кошачьих. Животные обладают хорошей памятью и легко поддаются дрессировке. 
+                            Например, быстро запоминают базовые команды из общего курса дрессировки для собак, 
+                            могут ходить в туалет на унитаз или выключать свет в комнате.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Позднее взросление.</Bold>
+                            Мейн-кун сохраняет живой интерес к подвижным играм и ведет себя как котенок до трех лет. 
+                            После – приобретает степенность взрослой кошки, предпочитающей наблюдать за происходящим 
+                            со стороны.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Крупный размер.</Bold>
+                            Взрослые представители породы достигают размеров средней собаки. 
+                            При этом коты мейн-кунов значительно крупнее кошек.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Дорогостоящее содержание.</Bold>
+                            Представители породы мейн-кун требуют больших расходов на корм.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="200"/>
+                        <TableColumn Width="Auto"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell  Background="Yellow">
+                                <Paragraph TextAlignment="Left">
+                                    <Bold>Ориентация на одного хозяина</Bold>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell Background="Green">
+                                <Paragraph>
+                                    Мейн слушается и проявляет внимание к тому, кто кормит и играет с ним больше, 
+                                    чем остальные.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell  Background="Yellow">
+                                <Paragraph TextAlignment="Left">
+                                    <Bold>Умеренная потребность в груминге</Bold>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell Background="Green">
+                                <Paragraph>
+                                    Шерсть мейн-кунов не склонна к образованию колтунов. 
+                                    Поэтому вычесывать выпавшие волоски достаточно два раза в неделю.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    <Floater Width="400" HorizontalAlignment="Center">
+                        <BlockUIContainer>
+                            <Image Source="data/1.jpeg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Сохранить" Width="100" Click="Button_Click_2"/>
+            <Button Content="Открыть" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+
+</Window>
